@@ -1,105 +1,118 @@
-# 🏢 Sistema de Gestão de Patrimônio
+<h1 align="center">🏢 Patrimoniário</h1>
 
-Sistema web para gerenciamento completo de patrimônios, com foco em praticidade, automação e visualização inteligente dos dados.
+<p align="center">
+Sistema web moderno para controle patrimonial, com dashboards, QR Code, importação em massa e gestão inteligente de ativos.
+</p>
 
-A aplicação permite o controle total dos ativos através de uma interface moderna em página única (SPA), utilizando apenas frontend integrado a serviços terceiros.
+<p align="center">
+  <img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/home_patrimonio.png?raw=true" width="800"/>
+</p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Styled%20Components-db7093?style=for-the-badge&logo=styledcomponents&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white"/>
+</p>
 
-# 🚀 Funcionalidades
-
-## 📦 Gestão de Patrimônios
-
-* Cadastro de patrimônios
-* Edição de informações
-* Exclusão de registros
-* Organização por categorias e modelos dinâmicos
-
----
-
-## 📊 Visualização de Dados
-
-* Dashboards interativos
-* Tabelas completas com listagem dos patrimônios
-* Visualização prática em página única
-
----
-
-## 🔍 Filtros Avançados
-
-* Filtragem por categoria
-* Filtragem por modelo
-* Busca específica por patrimônio
-* Combinação de múltiplos filtros
+<p align="center">
+  <a href="https://projeto-patrimoniario.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Demo-000000?style=for-the-badge"/>
+  </a>
+</p>
 
 ---
 
-## 📥 Importação e Exportação
+## 📌 Sobre o Projeto
 
-* Importação automática via arquivo Excel
-* Download de template Excel
-* Exportação de dados
+O **Sistema de Gestão de Patrimônio** foi desenvolvido para facilitar o controle de ativos de empresas e instituições, oferecendo uma interface moderna, rápida e intuitiva.
 
----
+### Principais funcionalidades:
 
-## 🏷️ Etiquetas com QR Code
-
-* Geração de etiquetas individuais ou em lote
-* Seleção específica de patrimônios para geração
-* Download em PDF
-* Leitura via celular
-* Acesso às informações do patrimônio via QR Code (necessário login)
+- 📦 Cadastro, edição e exclusão de patrimônios  
+- 📊 Dashboards gerenciais em tempo real  
+- 🔍 Filtros avançados e buscas inteligentes  
+- 📥 Importação via Excel  
+- 🏷️ Geração de etiquetas com QR Code  
+- 📄 Exportação de relatórios e PDFs  
+- 📱 Interface responsiva para desktop e mobile  
 
 ---
 
-## 🧠 Gestão Dinâmica
+## 🧠 Diferenciais
 
-* Criação de categorias e modelos diretamente na interface
-* Sem necessidade de telas separadas
-* Fluxo simplificado e ágil
-
----
-
-# 🛠️ Tecnologias Utilizadas
-
-## Frontend
-
-* React + Vite
-
-## Serviços Externos
-
-* Firebase Authentication → autenticação de usuários
-* Firestore → banco de dados em tempo real
-* Cloudinary → armazenamento e entrega de imagens
+- ⚡ Interface SPA de alta performance  
+- ☁️ Arquitetura serverless moderna  
+- 🧩 Gestão dinâmica de categorias e modelos  
+- 📈 Redução de processos manuais  
+- 🔧 Escalável e fácil manutenção  
 
 ---
 
-# 🧩 Arquitetura
+## 🛠️ Stack Tecnológica
 
-O sistema foi desenvolvido sem backend próprio, utilizando:
+### Frontend
 
-* Frontend como camada principal
-* Firebase para autenticação e persistência
-* Cloudinary para armazenamento de mídia
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Styled%20Components-db7093?style=flat&logo=styledcomponents&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white"/>
+</p>
 
-Isso permite:
+### Backend as a Service
 
-* Alta escalabilidade
-* Baixa complexidade de infraestrutura
-* Deploy simplificado
+<p>
+  <img src="https://img.shields.io/badge/Firebase%20Auth-ffca28?style=flat&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Firestore-ffca28?style=flat&logo=firebase&logoColor=black"/>
+</p>
+
+### Serviços Externos
+
+<p>
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white"/>
+  <img src="https://img.shields.io/badge/QR%20Code-000000?style=flat&logo=qrcode&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XLSX%20Import%2FExport-217346?style=flat&logo=microsoft-excel&logoColor=white"/>
+</p>
+
+### Deploy
+
+<p>
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=black"/>
+</p>
 
 ---
 
-# 💻 Como rodar o projeto localmente
 
-## 🔧 Pré-requisitos
+## 🧩 Arquitetura
+
+```text
+Frontend React SPA
+      ↓
+Firebase Auth → Login e Segurança
+Firestore → Dados em tempo real
+Cloudinary → Imagens
+Serviços externos → QR Code / Excel / PDF
+```
+### Benefícios
+- ☁️ Infraestrutura simplificada  
+- ⚡ Resposta rápida  
+- 📈 Escalabilidade automática  
+- 💸 Baixo custo operacional
+
+---
+
+## 💻 Como rodar o projeto localmente
+
+### 🔧 Pré-requisitos
 
 * Node.js instalado (recomendado versão LTS)
 * NPM ou Yarn
 
 ---
 
-## 📥 1. Clone o repositório
+### 📥 1. Clone o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
@@ -107,7 +120,7 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 
 ---
 
-## 📂 2. Acesse a pasta do projeto
+### 📂 2. Acesse a pasta do projeto
 
 ```bash
 cd gestao_patrimonial
@@ -115,7 +128,7 @@ cd gestao_patrimonial
 
 ---
 
-## 📦 3. Instale as dependências
+### 📦 3. Instale as dependências
 
 ```bash
 npm install
@@ -129,7 +142,7 @@ npm i
 
 ---
 
-## ▶️ 4. Execute o projeto
+### ▶️ 4. Execute o projeto
 
 ```bash
 npm run dev
@@ -137,7 +150,7 @@ npm run dev
 
 ---
 
-## 🌐 5. Acesse no navegador
+### 🌐 5. Acesse no navegador
 
 O sistema estará disponível em:
 
@@ -147,7 +160,7 @@ http://localhost:5173
 
 ---
 
-# ⚙️ Variáveis de Ambiente
+## ⚙️ Variáveis de Ambiente
 
 Crie um arquivo `.env` na raiz do projeto com as seguintes configurações:
 
@@ -167,50 +180,37 @@ VITE_CLOUDINARY_UPLOAD_PRESET=
 
 ---
 
-# 🔐 Autenticação
-
-* O acesso ao sistema requer login
-* A leitura de QR Code também exige autenticação
-* Controle de acesso feito via Firebase Auth
-
----
-
-# 📱 Uso via celular
-
-* Leitura de QR Code direciona para página do patrimônio
-* Necessário estar autenticado para visualizar os dados
-* Interface responsiva
+## 📈 Possíveis Evoluções
+- 🔐 Controle de permissões por usuário
+- 📝 Histórico de movimentações
+- 📊 Auditoria de alterações
+- 🔔 Alertas automáticos
+- 🤖 Dashboard com IA preditiva
 
 ---
 
-# 📌 Diferenciais do Projeto
-
-* Arquitetura sem backend próprio
-* Integração com serviços modernos (Firebase + Cloudinary)
-* Geração de etiquetas com QR Code
-* Importação em massa via Excel
-* Interface única e fluida
-* Sistema dinâmico sem telas redundantes
+## 📄 Licença
+<p>
+Este projeto está disponível para fins de estudo, portfólio e aprendizado. 
+Sinta-se à vontade para fazer um fork, evoluir a solução e criar novas melhorias a partir dele.
+</p>
 
 ---
 
-# 🚧 Possíveis melhorias futuras
+## 👨‍💻 Autor
 
-* Backend dedicado para maior controle de segurança
-* Controle de permissões por usuário
-* Histórico de alterações
-* Auditoria de ações
-* Notificações automáticas
-* Integração com IA para análise de patrimônio
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/matheusconaga" width="110px;" style="border-radius:50%;" />
+</p>
 
----
+<h3 align="center">Matheus Lula</h3>
 
-# 📄 Licença
+<p align="center">
+Desenvolvedor Fullstack • React • Flutter • FastAPI • IA
+</p>
 
-Este projeto é de uso livre para fins de estudo e desenvolvimento.
-
----
-
-# 👨‍💻 Autor
-
-Desenvolvido por Matheus Lula
+<div align="center">
+<a href="mailto:matheusphillip170@gmail.com"><img src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/matheusconaga/"><img src="https://img.shields.io/badge/💼%20LinkedIn-0e76a8?style=for-the-badge&logo=linkedin"/></a>
+<a href="https://portifoliomatheuslula.onrender.com/"><img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+</div>
