@@ -5,7 +5,7 @@ Sistema web moderno para controle patrimonial, com dashboards, QR Code, importa√
 </p>
 
 <p align="center">
-  <img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/home_patrimonio.png?raw=true" width="800"/>
+  <img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/patrimoniario.png?raw=true" width="800"/>
 </p>
 
 <p align="center">
