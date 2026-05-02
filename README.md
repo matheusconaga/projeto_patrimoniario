@@ -50,6 +50,26 @@ O **Sistema de Gestão de Patrimônio** foi desenvolvido para facilitar o contro
 
 ---
 
+## 🎥 Preview do Sistema
+
+<div align="center">
+
+| Dashboard | Gestão Patrimonial |
+|-----------|--------------------|
+| <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/home_patrimonio.png?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/02_tabeladados.jpg?raw=true" width="430"></p> |
+
+| Adição de Patrimônio | Etiquetas Inteligentes |
+|----------------------|------------------------|
+| <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/03_adicaopatrimonio.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/04_etiqueta.png?raw=true" width="430"></p> |
+
+| Importação em Massa | Versão Mobile |
+|---------------------|---------------|
+| <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/05_importacao.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/06_mobile.jpg?raw=true" width="200"></p> |
+  
+</div>
+
+---
+
 ## 🛠️ Stack Tecnológica
 
 ### Frontend
