@@ -47,7 +47,7 @@ The **Asset Management System** was developed to streamline asset tracking for c
 
 ```text
 E-mail: visit@gmail.com
-Senha: visit123
+Password: visit123
 ```
 
 ## 🧠 Core Differentials
