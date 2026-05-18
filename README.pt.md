@@ -6,7 +6,7 @@
 <h1 align="center">🏢 Patrimoniario</h1>
 
 <p align="center">
-A modern web system for asset management, featuring real-time dashboards, QR Code generation, bulk import, and smart asset tracking.
+Sistema web moderno para controle patrimonial, com dashboards, QR Code, importação em massa e gestão inteligente de ativos.
 </p>
 
 <p align="center">
@@ -29,54 +29,55 @@ A modern web system for asset management, featuring real-time dashboards, QR Cod
 
 ---
 
-## 📌 About the Project
 
-The **Asset Management System** was developed to streamline asset tracking for companies and institutions, offering a modern, fast, and intuitive user interface.
+## 📌 Sobre o Projeto
 
-### Key Features:
+O **Sistema de Gestão de Patrimônio** foi desenvolvido para facilitar o controle de ativos de empresas e instituições, oferecendo uma interface moderna, rápida e intuitiva.
 
-- 📦 Create, read, update, and delete (CRUD) assets
-- 📊 Real-time management dashboards
-- 🔍 Advanced filters and smart search
-- 📥 Bulk data import via Excel
-- 🏷️ Smart label generation with QR Codes
-- 📄 Report and PDF exporting
-- 📱 Responsive UI tailored for desktop and mobile
+### Principais Funcionalidades:
 
-### 🧪 Test Access:
+- 📦 Cadastro, edição e exclusão de patrimônios  
+- 📊 Dashboards gerenciais em tempo real  
+- 🔍 Filtros avançados e buscas inteligentes  
+- 📥 Importação via Excel  
+- 🏷️ Geração de etiquetas com QR Code  
+- 📄 Exportação de relatórios e PDFs  
+- 📱 Interface responsiva para desktop e mobile  
+
+### 🧪 Acesso para Testes:
 
 ```text
 E-mail: visit@gmail.com
 Senha: visit123
 ```
 
-## 🧠 Core Differentials
+## 🧠 Diferenciais
 
-- ⚡ High-performance SPA interface
-- ☁️ Modern serverless architecture
-- 🧩 Dynamic category and model management
-- 📈 Reduction of manual processes
-- 🔧 Scalable and easy to maintain
+- ⚡ Interface SPA de alta performance  
+- ☁️ Arquitetura serverless moderna  
+- 🧩 Gestão dinâmica de categorias e modelos  
+- 📈 Redução de processos manuais  
+- 🔧 Escalável e fácil manutenção  
 
-## 🎥 System Preview
+## 🎥 Preview do Sistema
 
 <div align="center">
 
-| Dashboard | Asset Management |
+| Dashboard | Gestão Patrimonial |
 |-----------|--------------------|
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/home_patrimonio.png?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/02_tabeladados.jpg?raw=true" width="430"></p> |
 
-| Add Asset | Smart Labels |
+| Adição de Patrimônio | Etiquetas Inteligentes |
 |----------------------|------------------------|
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/03_adicaopatrimonio.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/04_etiqueta.png?raw=true" width="430"></p> |
 
-| Bulk Import | Mobile Version |
+| Importação em Massa | Versão Mobile |
 |---------------------|---------------|
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/05_importacao.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/06_mobile.jpg?raw=true" width="200"></p> |
   
 </div>
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Tecnológica
 
 ### Frontend
 
@@ -94,7 +95,7 @@ Senha: visit123
   <img src="https://img.shields.io/badge/Firestore-ffca28?style=flat&logo=firebase&logoColor=black"/>
 </p>
 
-### Third-Party Services
+### Serviços Externos
 
 <p>
   <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white"/>
@@ -102,77 +103,79 @@ Senha: visit123
   <img src="https://img.shields.io/badge/XLSX%20Import%2FExport-217346?style=flat&logo=microsoft-excel&logoColor=white"/>
 </p>
 
-### Deployment
+### Deploy
 
 <p>
   <img src="https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=black"/>
 </p>
 
-## 🧩 Architecture
+
+## 🧩 Arquitetura
 
 ```text
-React SPA Frontend
-         ↓
-Firebase Auth → Authentication & Security
-Firestore → Real-time database
-Cloudinary → Image hosting
-External Services → QR Code / Excel / PDF
+Frontend React SPA
+      ↓
+Firebase Auth → Login e Segurança
+Firestore → Dados em tempo real
+Cloudinary → Imagens
+Serviços externos → QR Code / Excel / PDF
 ```
-### Benefits
-- ☁️ Streamlined infrastructure
-- ⚡ Fast response times
-- 📈 Automatic scalability
-- 💸 Low operational cost
+### Benefícios
+- ☁️ Infraestrutura simplificada  
+- ⚡ Resposta rápida  
+- 📈 Escalabilidade automática  
+- 💸 Baixo custo operacional
+
+## 💻 Como rodar o projeto localmente
+
+### 🔧 Pré-requisitos
+
+* Node.js instalado (recomendado versão LTS)
+* NPM ou Yarn
 
 
-## 💻 How to Run the Project Locally
-
-### 🔧 Prerequisites
-
-* Node.js installed (LTS version recommended)
-* NPM or Yarn
-
-### 📥 1. Clone the repository
+### 📥 1. Clone o repositório
 
 ```bash
 git clone https://github.com/matheusconaga/projeto_patrimoniario.git
 ```
 
-### 📂 2. Navigate to the project folder
+### 📂 2. Acesse a pasta do projeto
 
 ```bash
 cd projeto_patrimoniario
 ```
 
-### 📦 3. Install dependencies
+### 📦 3. Instale as dependências
 
 ```bash
 npm install
 ```
 
-or
+ou
 
 ```bash
 npm i
 ```
 
-### ▶️ 4. Start the development server
+### ▶️ 4. Execute o projeto
 
 ```bash
 npm run dev
 ```
 
-### 🌐 5. Access in your browser
 
-The system will be available at:
+### 🌐 5. Acesse no navegador
+
+O sistema estará disponível em:
 
 ```
 http://localhost:5173
 ```
 
-## ⚙️ Environment Variables
+## ⚙️ Variáveis de Ambiente
 
-Create a `.env` file in the root directory with the following configuration:
+Crie um arquivo `.env` na raiz do projeto com as seguintes configurações:
 
 ```env
 # Firebase
@@ -188,20 +191,22 @@ VITE_CLOUDINARY_CLOUD_NAME=
 VITE_CLOUDINARY_UPLOAD_PRESET=
 ```
 
-## 📈 Future Enhancements
-- 🔐 Role-Based Access Control (RBAC)
-- 📝 Asset transfer and movement history
-- 📊 Audit logs for tracking changes
-- 🔔 Automated alerts and notifications
-- 🤖 Predictive AI analytics dashboard
 
-## 📄 License
+## 📈 Possíveis Evoluções
+- 🔐 Controle de permissões por usuário
+- 📝 Histórico de movimentações
+- 📊 Auditoria de alterações
+- 🔔 Alertas automáticos
+- 🤖 Dashboard com IA preditiva
+
+
+## 📄 Licença
 <p>
-This project is available for study, portfolio, and learning purposes. 
-Feel free to fork it, enhance the solution, and build new improvements on top of it.
+Este projeto está disponível para fins de estudo, portfólio e aprendizado. 
+Sinta-se à vontade para fazer um fork, evoluir a solução e criar novas melhorias a partir dele.
 </p>
 
-## 👨‍💻 Author
+## 👨‍💻 Autor
 
 <p align="center">
   <img src="https://avatars.githubusercontent.com/matheusconaga" width="110px;" style="border-radius:50%;" />
