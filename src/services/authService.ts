@@ -5,14 +5,14 @@ import { serverTimestamp } from "firebase/firestore";
 import type { FirebaseError } from "firebase/app";
 
 
-function isValidEmail(email: string): boolean {
+export function isValidEmail(email: string): boolean {
   const trimmed = email.trim();
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(trimmed);
 }
 
 
-function normalizeName(name: string) {
+export function normalizeName(name: string) {
   return name
     .trim()
     .split(/\s+/) 
@@ -20,7 +20,7 @@ function normalizeName(name: string) {
     .join(" ");
 }
 
-function normalizeEmail(email: string) {
+export function normalizeEmail(email: string) {
   return email.trim().toLowerCase();
 }
 

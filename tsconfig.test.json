@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["vite/client", "node", "jest"]
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}
