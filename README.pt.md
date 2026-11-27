@@ -8,12 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://matheusconaga.dev/projects/patrimoniario">
-    <img src="https://img.shields.io/badge/🇧🇷%20Estudo%20de%20Caso-Ver%20no%20Portfólio-0A192F?style=for-the-badge" alt="Ver estudo de caso em português">
-  </a>
-  <a href="https://matheusconaga.dev/en/projects/patrimoniario">
-    <img src="https://img.shields.io/badge/🇺🇸%20Case%20Study-View%20Portfolio-0A192F?style=for-the-badge" alt="View case study in English">
-  </a>
+  <a href="https://matheusconaga.dev/projects/patrimoniario"><img src="https://img.shields.io/badge/🇧🇷%20Estudo%20de%20Caso-Ver%20no%20Portfólio-0A192F?style=for-the-badge" alt="Ver estudo de caso em português"></a>
+  <a href="https://matheusconaga.dev/en/projects/patrimoniario"><img src="https://img.shields.io/badge/🇺🇸%20Case%20Study-View%20Portfolio-0A192F?style=for-the-badge" alt="View case study in English"></a>
 </p>
 
 <h1 align="center">🏢 Patrimoniário</h1>
