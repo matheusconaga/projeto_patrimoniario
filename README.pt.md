@@ -3,6 +3,18 @@
   <a href="README.pt.md"><img src="https://img.shields.io/badge/Lang-Português-green?style=for-the-badge" alt="Português"></a>
 </p>
 
+<p align="center">
+  Confira o estudo de caso completo, com uma visão resumida dos problemas identificados, soluções desenvolvidas, desafios técnicos e decisões tomadas durante a implementação.
+</p>
+
+<p align="center">
+  <a href="https://matheusconaga.dev/projects/patrimoniario">
+    <img src="https://img.shields.io/badge/🇧🇷%20Estudo%20de%20Caso-Ver%20no%20Portfólio-0A192F?style=for-the-badge" alt="Ver estudo de caso em português">
+  </a>
+  <a href="https://matheusconaga.dev/en/projects/patrimoniario">
+    <img src="https://img.shields.io/badge/🇺🇸%20Case%20Study-View%20Portfolio-0A192F?style=for-the-badge" alt="View case study in English">
+  </a>
+</p>
 
 <h1 align="center">🏢 Patrimoniário</h1>
 

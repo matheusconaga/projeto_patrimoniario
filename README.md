@@ -3,6 +3,18 @@
   <a href="README.pt.md"><img src="https://img.shields.io/badge/Lang-Português-green?style=for-the-badge" alt="Português"></a>
 </p>
 
+<p align="center">
+  Explore the full case study, featuring a concise overview of the problems identified, solutions developed, technical challenges, and key implementation decisions.
+</p>
+
+<p align="center">
+  <a href="https://matheusconaga.dev/projects/patrimoniario">
+    <img src="https://img.shields.io/badge/🇧🇷%20Estudo%20de%20Caso-Ver%20no%20Portfólio-0A192F?style=for-the-badge" alt="Ver estudo de caso em português">
+  </a>
+  <a href="https://matheusconaga.dev/en/projects/patrimoniario">
+    <img src="https://img.shields.io/badge/🇺🇸%20Case%20Study-View%20Portfolio-0A192F?style=for-the-badge" alt="View case study in English">
+  </a>
+</p>
 
 <h1 align="center">🏢 Patrimoniário</h1>
 
@@ -71,12 +83,14 @@ The application also separates reusable asset descriptions from individual physi
 ## ✨ Core Features
 
 ### Asset Management
+
 - Register, edit, view, and delete individual assets.
 - Organize assets by category, location, conservation condition, and status.
 - Store acquisition information, prices, and observations.
 - Reuse descriptive models across multiple physical assets.
 
 ### Dashboard and Data Visualization
+
 - Display total asset records.
 - Summarize asset entries and exits.
 - Calculate total asset values.
@@ -84,22 +98,26 @@ The application also separates reusable asset descriptions from individual physi
 - Visualize information through charts using Recharts.
 
 ### Spreadsheet Import and Export
+
 - Import multiple assets from Excel spreadsheets.
 - Process structured spreadsheet data.
 - Reuse existing asset models when possible.
 - Export filtered asset records to Excel.
 
 ### QR Code Identification
+
 - Generate QR Codes for individual assets.
 - Link each QR Code to the corresponding asset details page.
 - Support faster identification and access to asset information.
 
 ### Image Management
+
 - Upload asset images using Cloudinary.
 - Store image URLs alongside asset records.
 - Display images in asset registration and management screens.
 
 ### Authentication and Protected Routes
+
 - User registration and login through Firebase Authentication.
 - Check user approval status before granting access.
 - Protect application routes from unauthenticated access.
@@ -110,18 +128,18 @@ The application also separates reusable asset descriptions from individual physi
 
 <div align="center">
 
-| Dashboard | Asset Management |
-|-----------|--------------------|
+| Dashboard                                                                                                                                          | Asset Management                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/home_patrimonio.png?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/02_tabeladados.jpg?raw=true" width="430"></p> |
 
-| Add Asset | Smart Labels |
-|----------------------|------------------------|
+| Add Asset                                                                                                                                              | Smart Labels                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/03_adicaopatrimonio.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/04_etiqueta.png?raw=true" width="430"></p> |
 
-| Bulk Import | Mobile Version |
-|---------------------|---------------|
+| Bulk Import                                                                                                                                      | Mobile Version                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/05_importacao.jpg?raw=true" width="430"></p> | <p align="center"><img src="https://github.com/matheusconaga/projeto_patrimoniario/blob/main/assets/06_mobile.jpg?raw=true" width="200"></p> |
-  
+
 </div>
 
 ---
@@ -153,15 +171,15 @@ flowchart TD
 
 ### Application Layers
 
-| Layer | Responsibility |
-|---|---|
-| Presentation | React components and application screens |
-| Routing | Navigation and protected routes |
-| State Management | Authentication state through Zustand |
-| Services | Business operations and communication with external services |
-| Authentication | Firebase Authentication |
-| Database | Cloud Firestore |
-| Image Storage | Cloudinary |
+| Layer            | Responsibility                                               |
+| ---------------- | ------------------------------------------------------------ |
+| Presentation     | React components and application screens                     |
+| Routing          | Navigation and protected routes                              |
+| State Management | Authentication state through Zustand                         |
+| Services         | Business operations and communication with external services |
+| Authentication   | Firebase Authentication                                      |
+| Database         | Cloud Firestore                                              |
+| Image Storage    | Cloudinary                                                   |
 
 The service layer centralizes operations involving authentication, asset records, reusable models, and image uploads, keeping these responsibilities separate from the presentation components.
 
@@ -175,47 +193,47 @@ The main collections are:
 
 Stores user information and access approval status.
 
-| Field | Description |
-|---|---|
-| uid | Firebase Authentication user identifier |
-| name | User name |
-| email | User email |
-| approved | Indicates whether the user is authorized to access the application |
-| createdAt | Registration timestamp |
+| Field     | Description                                                        |
+| --------- | ------------------------------------------------------------------ |
+| uid       | Firebase Authentication user identifier                            |
+| name      | User name                                                          |
+| email     | User email                                                         |
+| approved  | Indicates whether the user is authorized to access the application |
+| createdAt | Registration timestamp                                             |
 
 ### Modelos
 
 Stores reusable descriptive information about asset types.
 
-| Field | Description |
-|---|---|
-| id | Model identifier |
-| name | Asset name |
-| category | Asset category |
-| unit | Measurement unit |
-| brand | Manufacturer or brand |
-| model | Model description |
-| image | Associated image URL |
-| creator | User who created the record |
+| Field      | Description                     |
+| ---------- | ------------------------------- |
+| id         | Model identifier                |
+| name       | Asset name                      |
+| category   | Asset category                  |
+| unit       | Measurement unit                |
+| brand      | Manufacturer or brand           |
+| model      | Model description               |
+| image      | Associated image URL            |
+| creator    | User who created the record     |
 | timestamps | Creation and update information |
 
 ### PatrimonioIndividual
 
 Stores information about each physical asset.
 
-| Field | Description |
-|---|---|
-| id | Asset identifier |
-| modeloId | Reference to the associated model |
-| location | Asset location |
-| conservation | Conservation condition |
-| status | Current asset status |
-| price | Asset value |
-| acquisitionMethod | Acquisition method |
-| observations | Additional information |
-| inventoryKeeper | Person responsible for inventory |
-| acquisitionDate | Acquisition date |
-| updateDate | Last update date |
+| Field             | Description                       |
+| ----------------- | --------------------------------- |
+| id                | Asset identifier                  |
+| modeloId          | Reference to the associated model |
+| location          | Asset location                    |
+| conservation      | Conservation condition            |
+| status            | Current asset status              |
+| price             | Asset value                       |
+| acquisitionMethod | Acquisition method                |
+| observations      | Additional information            |
+| inventoryKeeper   | Person responsible for inventory  |
+| acquisitionDate   | Acquisition date                  |
+| updateDate        | Last update date                  |
 
 ### Logical Relationship
 
@@ -351,6 +369,7 @@ The import workflow processes spreadsheet rows individually. It does not current
 ### Firebase Authentication
 
 Used for:
+
 - User registration.
 - User login.
 - Authentication state monitoring.
@@ -359,6 +378,7 @@ Used for:
 ### Cloud Firestore
 
 Used to store:
+
 - User information and approval status.
 - Reusable asset models.
 - Individual asset records.
@@ -366,6 +386,7 @@ Used to store:
 ### Cloudinary
 
 Used for:
+
 - Uploading asset images.
 - Hosting image files.
 - Providing secure image URLs used by the application.
@@ -374,25 +395,25 @@ Used for:
 
 ## 🛠️ Technology Stack
 
-| Category | Technologies |
-|---|---|
-| Frontend | React 19, TypeScript |
-| Build Tool | Vite |
-| Styling | Styled Components |
-| Routing | React Router |
-| State Management | Zustand |
-| Authentication | Firebase Authentication |
-| Database | Cloud Firestore |
-| Image Storage | Cloudinary |
-| Data Processing | ExcelJS, XLSX |
-| QR Codes | qrcode.react |
-| PDF Generation | jsPDF, html2canvas |
-| Charts | Recharts |
-| Notifications | React Toastify |
-| Icons | Lucide React |
-| Testing | Jest, React Testing Library |
-| Code Quality | ESLint |
-| Deployment | Render |
+| Category         | Technologies                |
+| ---------------- | --------------------------- |
+| Frontend         | React 19, TypeScript        |
+| Build Tool       | Vite                        |
+| Styling          | Styled Components           |
+| Routing          | React Router                |
+| State Management | Zustand                     |
+| Authentication   | Firebase Authentication     |
+| Database         | Cloud Firestore             |
+| Image Storage    | Cloudinary                  |
+| Data Processing  | ExcelJS, XLSX               |
+| QR Codes         | qrcode.react                |
+| PDF Generation   | jsPDF, html2canvas          |
+| Charts           | Recharts                    |
+| Notifications    | React Toastify              |
+| Icons            | Lucide React                |
+| Testing          | Jest, React Testing Library |
+| Code Quality     | ESLint                      |
+| Deployment       | Render                      |
 
 ---
 
@@ -414,12 +435,12 @@ The existing tests cover selected service and utility functions, including:
 
 The following figures come from the coverage report included in the project archive. They represent an initial testing stage, not a comprehensive test suite.
 
-| Metric | Coverage |
-|---|---:|
-| Statements | 31.02% |
-| Branches | 19.59% |
-| Functions | 27.50% |
-| Lines | 31.00% |
+| Metric     | Coverage |
+| ---------- | -------: |
+| Statements |   31.02% |
+| Branches   |   19.59% |
+| Functions  |   27.50% |
+| Lines      |   31.00% |
 
 Testing was started to validate important application operations, but the suite was not fully expanded.
 
@@ -563,7 +584,6 @@ For usage or distribution permissions, please contact the author.
 I develop web applications, backend services and API integrations, with an interest in software architecture, automation and AI-powered solutions.
 
 Patrimoniário is an asset management system designed to replace spreadsheet-based workflows with a centralized platform for registering, organizing and identifying institutional assets. This project explores the application of modern frontend technologies, cloud services and data management practices to solve a practical organizational problem, with features such as bulk Excel import, QR Code generation, dashboards and image management.
-
 
 <p align="center">
 <a href="mailto:matheusphillip170@gmail.com"><img src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white"/></a>
